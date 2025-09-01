@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html, body { height: 100%; background: radial-gradient(1200px 800px at 20% -10%, rgba(124,58,237,.25), transparent 60%), radial-gradient(1200px 800px at 120% 110%, rgba(59,130,246,.20), transparent 60%), #0b0b0f; }
+* { -webkit-tap-highlight-color: transparent; }
+
+.btn {
+  @apply rounded-lg px-4 py-2 bg-accent text-white font-semibold hover:opacity-95 active:opacity-90 transition;
+}
+.card {
+  @apply bg-card/80 backdrop-blur rounded-2xl border border-white/5;
+}
